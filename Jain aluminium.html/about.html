@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About section</title>
+</head>
+<style>
+    .about-section {
+  padding: 80px 10%;
+  background: #fff;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  border-left: 5px solid #e919c6;
+  padding-left: 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+.about-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-images {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about-images img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-content {
+  flex: 1 1 400px;
+}
+
+.about-content h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about-content a {
+  color: #b3004b;
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+.extra-info {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f8f8;
+  border-left: 4px solid #b3004b;
+  border-radius: 6px;
+  font-style: italic;
+  color: #444;
+}
+
+.footer {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    padding: 60px 20px 20px;
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+  }
+
+  .footer-column {
+    flex: 1 1 250px;
+  }
+
+  .brand-title {
+    color: #EA4C89;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .footer-column h4 {
+    color: #EA4C89;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .footer-column p,
+  .footer-column a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+    transition: color 0.3s;
+  }
+
+  .footer-column a:hover {
+    color: #8ff082;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+
+  .social-icons a img {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+  }
+
+  .social-icons a:hover img {
+    filter: brightness(0) invert(0.5) sepia(1) saturate(2) hue-rotate(70deg);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    font-size: 13px;
+    color: #aaa;
+  }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-section h2 {
+    font-size: 26px;
+  }
+}
+
+
+
+</style>
+<body>
+    <section class="about-section">
+        <h2>About</h2>
+        <div class="about-container">
+          
+          <!-- Left: Images -->
+          <div class="about-images">
+            <img src="https://www.shutterstock.com/image-photo/pvc-industry-worker-operator-making-600nw-2498302763.jpg" alt="Aluminium work in progress">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlLH5T4VaponReKJ7SUI5l9dUnZ5nhJhwc0rdrkDcAHMPLCLnw9G4-NXUUf2_N7tyFPCQ&usqp=CAU" alt="Aluminium manufacturing process">
+          </div>
+      
+          <!-- Right: Content -->
+          <div class="about-content">
+            <h3>Jain Aluminium Works</h3>
+            <p>
+              At Jain Aluminium Works, we take pride in delivering premium quality aluminium solutions with unmatched craftsmanship. Our products are manufactured using high-grade materials and advanced techniques to ensure durability, design, and precision.
+            </p>
+            <p>
+              We specialize in aluminium doors, windows, office cabins, and custom partitions—each tailored to meet client-specific requirements for both residential and commercial spaces.
+            </p>
+            <p>
+              Our expertise includes <a href="#">ACP Cladding</a>, <a href="#">Structural Glazing</a>, <a href="#">PVC Doors</a>, 
+              and <a href="#">Complete Aluminium Fabrication</a>. With a commitment to quality and customer satisfaction, we transform spaces with modern, sleek, and sustainable aluminium designs.
+            </p>
+            <p>
+              Choose Jain Aluminium Works for reliable execution, professional service, and aesthetically pleasing aluminium & glass work.
+            </p>
+            <p class="extra-info">
+              With over a decade of experience, our team has successfully completed projects for corporate offices, shopping complexes, modern homes, and industrial facilities. 
+              We combine design expertise with precision engineering to deliver results that exceed expectations.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+  
+          <!-- Brand -->
+          <div class="footer-column">
+            <h3 class="brand-title">Jain Aluminium Works</h3>
+            <p>Crafting excellence in aluminium windows, doors, partitions & more. Trusted across Maharashtra.</p>
+          </div>
+  
+          <!-- Navigation -->
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./index.html">🏠 Home</a></li>
+              <li><a href="./images/image.html">🛠️ Our Work</a></li>
+              <li><a href="./index.html">🪟 Products</a></li>
+              <li><a href="./index.html">📞 Contact</a></li>
+            </ul>
+          </div>
+  
+          <!-- Contact Info -->
+          <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p>📍 Near by bus stop katol ,th.Katol dist. Nagpur</p>
+            <p>📞 <a href="tel:9764090337">+91 97640 90337</a></p>
+            <p>📧 <a href="mailto:jainaluminium@gmail.com">jainaluminium@gmail.com</a></p>
+          </div>
+  
+          <!-- Social Media -->
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+              <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+              <a href="#"><img src="icons/whatsapp.svg" alt="WhatsApp"></a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 Jain Aluminium Works. Built with ❤️ in India.</p>
+        </div>
+      </footer>
+  
+      <!--footer section end->
+   
+  
+</body>
+</html>
