@@ -11,6 +11,12 @@
   body {
     font-family: sans-serif;
   }
+  html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* horizontal scroll ko remove kare */
+}
   /* Main container*/
   .main-container {
     width: 100vw;
@@ -725,6 +731,12 @@
   
   /* Mobile styles under 500px */
   @media (max-width: 500px) {
+    .home-section {
+      height: 100vh;
+      animation-name: example;
+      animation-duration: 4s;
+      background-size: cover;
+      background-position: center;}
     .nav-link {
       display: none;
       flex-direction: column;
@@ -752,13 +764,131 @@
   
     .hamburger {
       display: block;
+      font-size: 30px;
+      cursor: pointer;
     }
   
     .header {
-      height: 55px;
+      height: 50px;
       padding: 0 1rem;
     }
+
   }
+  /*436 and 361px fix and responsive*/
+
+  @media (max-width: 436px) and (min-width: 361px) {
+    .nav-link {
+      gap: 0.8rem; /* gap thoda kam kiya, 1.5rem se */
+      flex-wrap: wrap;
+    }
+    .nav-link {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 55px; /* header height */
+      left: 0;
+      padding: 15px 0;
+      gap: 15px;
+      text-align: center;
+    }
+      .header {
+        padding: 0 0.5rem; /* side gap reduce */
+      }
+      .home-content {
+        padding: 0 0.5rem; /* content ko side se chipka do */
+      }
+   
+    .logo-img {
+      height: 42px;
+      margin-right: 40px;
+    }
+    .nav-link a {
+      font-size: 0.95rem;
+    }
+    .dropbtn {
+      padding: 12px;
+      font-size: 16px;
+    }
+    
+    .hamburger {
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    /* Home section adjustments */
+    .home-section {
+      height: 95vh;
+      background-position: top;
+    }
+    .home-content h1 {
+      font-size: 2.5rem;
+    }
+    .home-content h4 {
+      font-size: 1.3rem;
+    }
+    .home-content p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+    .home-buttons {
+      flex-direction: row;
+      gap: 15px;
+    }
+    .btn {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+    
+  }
+  /* fix 436*/
+  @media (max-width: 360px) {
+    .nav-link {
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .logo-img {
+      height: 38px;
+    }
+    .nav-link a {
+      font-size: 0.85rem;
+    }
+    .dropbtn {
+      padding: 10px;
+      font-size: 15px;
+    }
+  
+    .home-section {
+      height: 90vh;
+      background-position: top;
+    }
+      
+    .hamburger {
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .home-content h1 {
+      font-size: 2rem;
+    }
+    .home-content h4 {
+      font-size: 1.1rem;
+    }
+    .home-content p {
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .home-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+ 
     /* Hero section ke liye gap fix */
     .hero {
       padding-top: 55px; /* header ke height ke barabar */
